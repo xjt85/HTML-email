@@ -1,4 +1,132 @@
 body {
-  max-width: 960px; }
-  body ul {
-    padding: 10px; }
+  margin: 0;
+  padding: 0; }
+
+.email-container {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #666; }
+
+.email-header {
+  background-color: #564842;
+  background-image: url("../img/bg.jpg");
+  background-position: top left;
+  color: #ffffff;
+  padding-top: 30px; }
+
+.email-header__center {
+  margin: auto;
+  max-width: 600px;
+  padding: 0 20px;
+  text-align: center; }
+
+.email-header__topline {
+  overflow: hidden;
+  width: 100%; }
+
+.email-logo {
+  float: left; }
+
+.email-social-wrapper {
+  float: right; }
+  .email-social-wrapper a {
+    margin-left: 8px; }
+
+.email-header__h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 34px;
+  margin: 90px 0 80px; }
+
+.email-button-wrapper {
+  text-align: center; }
+
+.email-button {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 12px 45px 10px;
+  background-color: #54b95c;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 80px; }
+
+.email-content {
+  text-align: center; }
+
+.email-content__center {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px 30px;
+  text-align: center; }
+
+.email-teasers-wrapper {
+  max-width: 570px;
+  text-align: center;
+  margin: -38px auto 45px;
+  background-color: #f0f0f1;
+  border-bottom: 5px solid #d4d4d4;
+  margin-top: -38px;
+  padding: 38px 50px 17px; }
+
+.email-teasers-item {
+  vertical-align: top;
+  display: inline-block;
+  width: 150px; }
+  .email-teasers-item img {
+    margin-bottom: 20px; }
+  .email-teasers-item__descr {
+    line-height: 16px; }
+
+.email-order-discount {
+  display: inline-block;
+  margin-bottom: 45px;
+  padding: 13px 30px;
+  border: 1px solid #796859;
+  border-radius: 2px;
+  color: #796859;
+  text-transform: uppercase;
+  letter-spacing: 0.2em; }
+
+.email-cards-card {
+  display: inline-block;
+  margin-right: 34px;
+  padding: 30px 0;
+  border-bottom: 1px solid #d4d4d4; }
+  .email-cards-card img {
+    width: 245px;
+    margin-bottom: 13px; }
+  .email-cards-card__price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 13px; }
+  .email-cards-card__currency {
+    margin-left: 8px; }
+  .email-cards-card__button {
+    display: inline-block;
+    padding: 8px 33px;
+    border-radius: 3px;
+    background-color: #796859;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer; }
+
+.email-footer {
+  color: #a1a1a1;
+  background-color: #ebebeb;
+  padding: 20px 0 25px;
+  text-align: center; }
+
+.email-footer__copyright {
+  display: inline-block;
+  margin-right: 5px; }
+  .email-footer__copyright a {
+    text-decoration: underline;
+    display: inline-block;
+    cursor: pointer; }
+    .email-footer__copyright a:hover {
+      text-decoration: none;
+      color: #636363; }

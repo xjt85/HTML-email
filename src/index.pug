@@ -1,5 +1,65 @@
+doctype html
 html
-    head
-        link(rel="stylesheet", href="")
-        meta(charset="utf-8")
+  head
+    link(rel="stylesheet", href="css/style.css")
+    meta(charset="utf-8")
         
+  body
+    .email-container
+      .email-header
+        .email-header__center
+          .email-header__topline
+            a.email-logo(href="//site.com")
+              img(src="img/logo.png", alt="Logo")
+            .email-social-wrapper
+              a(href="#")
+                img(src="img/soc_twitter.png", alt="Twitter")
+              a(href="#")
+                img(src="img/soc_vk.png", alt="VKontakte")
+              a(href="#")
+                img(src="img/soc_fb.png", alt="Facebook")
+          .email-header__h1.
+            Самое лучшее предложение<br> из всех, что вы получали
+          .email-button-wrapper 
+            a.email-button Подробнее
+      
+      .email-content
+        .email-content__center
+          .email-teasers-wrapper
+            .email-teasers-item
+              img(src="img/icon_1.png", alt="Преимущества")
+              .email-teasers-item__descr У нас есть лапки
+            .email-teasers-item
+              img(src="img/icon_2.png", alt="Преимущества")
+              .email-teasers-item__descr ... и бумажные самолетики
+            .email-teasers-item
+              img(src="img/icon_3.png", alt="Преимущества")
+              .email-teasers-item__descr Кроме того, у нас есть чемодан
+          .email-order-discount Заказывая сейчас - получаете скидку
+          .email-cards
+            .email-cards-card
+              img(src="img/items/1.jpg", alt="Заказать")
+              .email-cards-card__price 2000
+                span.email-cards-card__currency руб.
+              .email-cards-card__button Заказать
+            .email-cards-card
+              img(src="img/items/2.jpg", alt="Заказать")
+              .email-cards-card__price 2000
+                span.email-cards-card__currency руб.
+              .email-cards-card__button Заказать
+            .hr
+            .email-cards-card
+              img(src="img/items/3.jpg", alt="Заказать")
+              .email-cards-card__price 2000
+                span.email-cards-card__currency руб.
+              .email-cards-card__button Заказать
+            .email-cards-card
+              img(src="img/items/4.jpg", alt="Заказать")
+              .email-cards-card__price 2000
+                span.email-cards-card__currency руб.
+              .email-cards-card__button Заказать
+      
+      .email-footer
+        .email-footer__copyright ООО “Лучшее предложение”
+        a(href="#") Отписаться от рассылки
+

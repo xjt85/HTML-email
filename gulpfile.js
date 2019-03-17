@@ -32,28 +32,35 @@ var path = {
     clean: './build'
 };
 
-var config = {
+var serverConfig = {
     server: {
-        baseDir: "./build"
+        baseDir: "build"
     },
-    tunnel: true,
-    host: 'localhost',
-    port: 9000,
-    logPrefix: "xjt"
+    notify: false
 };
+
+gulp.task('webserver', function () {
+    browserSync(serverConfig);
+});
 
 gulp.task('html', function () {
     return gulp.src(path.src.html)
-        .pipe(pug({pretty: true}))
+        .pipe(pug({
+            pretty: true
+        }))
         .pipe(gulp.dest(path.build.html))
-        .pipe(reload({ stream: true }));
+        .pipe(reload({
+            stream: true
+        }));
 });
 
 gulp.task('styles', function () {
     return gulp.src(path.src.style)
-    .pipe(sass())
-    .pipe(gulp.dest(path.build.css))
-    .pipe(reload({ stream: true }));
+        .pipe(sass())
+        .pipe(gulp.dest(path.build.css))
+        .pipe(reload({
+            stream: true
+        }));
 });
 
 gulp.task('watch', function () {
@@ -61,4 +68,4 @@ gulp.task('watch', function () {
     gulp.watch(path.src.style, gulp.parallel('styles'));
 });
 
-gulp.task('default', gulp.parallel('watch','html','styles'));
+gulp.task('default', gulp.parallel('watch', 'html', 'styles', 'webserver'));
