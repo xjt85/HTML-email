@@ -157,8 +157,9 @@ body {
     margin-right: 5px;
 
     a {
-        text-decoration: underline;
         display: inline-block;
+        color: #a1a1a1;
+        text-decoration: underline;
         cursor: pointer;
 
         &:hover {

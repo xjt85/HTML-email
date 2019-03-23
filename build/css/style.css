@@ -124,8 +124,9 @@ body {
   display: inline-block;
   margin-right: 5px; }
   .email-footer__copyright a {
-    text-decoration: underline;
     display: inline-block;
+    color: #a1a1a1;
+    text-decoration: underline;
     cursor: pointer; }
     .email-footer__copyright a:hover {
       text-decoration: none;
